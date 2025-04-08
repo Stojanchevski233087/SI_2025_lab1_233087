@@ -64,9 +64,8 @@ class TaskManager {
 
     // 1. Remove a task by name
     public void removeTask(String name) {
-        // TODO: Implement removal logic
+        tasks.removeIf(task -> task.getName().equalsIgnoreCase(name));
     }
-
     // 2. Find all completed tasks
     public List<Task> getCompletedTasks() {
         // TODO: Implement logic to return completed tasks
@@ -80,7 +79,7 @@ class TaskManager {
 
     // 4. Sort tasks by priority
     public void sortTasksByPriority() {
-        // TODO: Implement sorting by priority logic
+        tasks.sort(Comparator.comparing(Task::getPriority));
     }
 
     // 5. Filter tasks by category
@@ -97,8 +96,12 @@ class TaskManager {
 
     // 7. Count tasks per category
     public Map<String, Integer> countTasksPerCategory() {
-        // TODO: Implement counting logic
-        return new HashMap<>();
+        Map<String, Integer> categoryCounts = new HashMap<>();
+        for (Task task : tasks) {
+            categoryCounts.put(task.getCategory(),
+                    categoryCounts.getOrDefault(task.getCategory(), 0) + 1);
+        }
+        return categoryCounts;
     }
 
     // 8. Mark a task as completed by name
