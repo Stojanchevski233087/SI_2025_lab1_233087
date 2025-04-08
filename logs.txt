@@ -1,0 +1,24 @@
+*   32b6548 Resolved merge conflicts
+|\  
+| *   2a50d6e Merge pull request #12 from Stojanchevski233087/5-sort-tasks-by-priority
+| |\  
+| | * 07acb8f Implemented sortTasksByPriority method
+| * |   fadb6cd Merge pull request #11 from Stojanchevski233087/2-remove-a-task-by-name
+| |\ \  
+| | |/  
+| |/|   
+| | | *   36c270b WIP on master: 79351e8 Implemented countTasksPerCategory method
+| |_|/|\  
+|/| | | | 
+| | | | * db730d4 untracked files on master: 79351e8 Implemented countTasksPerCategory method
+| | | * 8bfaa97 index on master: 79351e8 Implemented countTasksPerCategory method
+| |_|/  
+|/| |   
+* | | 79351e8 Implemented countTasksPerCategory method
+|/ /  
+| | * a786bdb Implemented removeTask method
+| |/  
+| * a4fe36c Implemented removeTaskByName method
+|/  
+* 9e21443 Add starter code
+* ab36206 Initial commit
