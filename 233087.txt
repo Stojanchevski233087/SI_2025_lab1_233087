@@ -1,24 +1,29 @@
-*   32b6548 Resolved merge conflicts
-|\  
-| *   2a50d6e Merge pull request #12 from Stojanchevski233087/5-sort-tasks-by-priority
-| |\  
-| | * 07acb8f Implemented sortTasksByPriority method
-| * |   fadb6cd Merge pull request #11 from Stojanchevski233087/2-remove-a-task-by-name
-| |\ \  
-| | |/  
-| |/|   
-| | | *   36c270b WIP on master: 79351e8 Implemented countTasksPerCategory method
-| |_|/|\  
-|/| | | | 
-| | | | * db730d4 untracked files on master: 79351e8 Implemented countTasksPerCategory method
-| | | * 8bfaa97 index on master: 79351e8 Implemented countTasksPerCategory method
-| |_|/  
-|/| |   
-* | | 79351e8 Implemented countTasksPerCategory method
-|/ /  
-| | * a786bdb Implemented removeTask method
-| |/  
-| * a4fe36c Implemented removeTaskByName method
-|/  
-* 9e21443 Add starter code
-* ab36206 Initial commit
+git init
+git remote add origin https://github.com/Stojanchevski233087/SI_2025_lab1_233087.git
+echo "# Име: Александар, Презиме: Стојанчевски, Индекс: 233087" > README.md
+git add README.md
+git commit -m "Initial commit"
+git add SI2025Lab1Main.java
+git commit -m "Add starter code"
+git push -u origin master
+git checkout -b 2-remove-a-task-by-name
+git add .
+git commit -m "Implemented removeTask method"
+git commit -m "Implemented removeTaskByName method"
+git push -u origin 2-remove-a-task-by-name
+git checkout -b 5-sort-tasks-by-priority
+git add .
+git commit -m "Implemented sortTasksByPriority method"
+git push -u origin 5-sort-tasks-by-priority
+git checkout -b 8-count-tasks-per-category
+git add .
+git commit -m "Implemented countTasksPerCategory method"
+git push -u origin 8-count-tasks-per-category
+git checkout master
+git merge 8-count-tasks-per-category
+git add .
+git commit -m "Resolved merge conflicts"
+git push origin master
+git add 233087.txt
+git commit -m "Updated 233087.txt with final documentation"
+git push origin master
